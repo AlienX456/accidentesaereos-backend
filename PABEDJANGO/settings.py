@@ -90,11 +90,11 @@ DATABASES = {
     },
     'data': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'accidentes_aereos',
-        'USER': 'accidentesadmin',
-        'PASSWORD': 'admin12354',
-        'HOST': 'database-accidentesaereos.cmfhk8pfazj4.us-east-1.rds.amazonaws.com',
-        'PORT': '5432',
+        'NAME': os.environ['DATABASE_NAME'],
+        'USER': os.environ['DATABASE_USER'],
+        'PASSWORD': os.environ['DATABASE_PASS'],
+        'HOST': os.environ['DATABASE_HOST'],
+        'PORT': int(os.environ['DATABASE_PORT'])
     }
 }
 
