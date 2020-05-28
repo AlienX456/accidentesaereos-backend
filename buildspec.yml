@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - echo "Instalando Python 3"
-      - sudo apt install python3
+      - apt install python3
       - echo "Instalando Dependencias"
       - pip install -r requirements.txt
   build:
