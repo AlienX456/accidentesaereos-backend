@@ -91,9 +91,9 @@ DATABASES = {
     'data': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'accidentes_aereos',
-        'USER': 'accidentes_user',
-        'PASSWORD': 'guess',
-        'HOST': 'localhost',
+        'USER': 'accidentesadmin',
+        'PASSWORD': 'admin12354',
+        'HOST': 'database-accidentesaereos.cmfhk8pfazj4.us-east-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
