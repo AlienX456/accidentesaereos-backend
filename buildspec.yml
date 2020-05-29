@@ -13,13 +13,8 @@ phases:
       - python manage.py test
   post_build:
     commands:
-      - echo Build completed on `date`
+      - python manage.py runserver
 artifacts:
   files:
     - '**/*'
-cache:
-  paths:
-    - '/root/.cache/pip/**/*'
-    - '/var/cache/apt/archives/**/*'
-    - '/var/lib/apt/lists/**/*'
-    - '/etc/apt/sources.list.d/mysql.list'
+
