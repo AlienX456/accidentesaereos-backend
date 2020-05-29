@@ -13,7 +13,7 @@ phases:
       - python manage.py test
   post_build:
     commands:
-      - python manage.py runserver
+      - echo Build completed on `date`
 artifacts:
   files:
     - '**/*'
