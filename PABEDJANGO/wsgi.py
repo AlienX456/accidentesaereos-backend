@@ -8,6 +8,10 @@ https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/
 """
 
 import os
+import sys
+
+sys.path.append('/home/esteban/Documents/Proyectos/accidentes-aereos/back-end')
+sys.path.append('/home/esteban/Documents/Proyectos/accidentes-aereos/back-end/PABEDJANGO')
 
 from django.core.wsgi import get_wsgi_application
 
