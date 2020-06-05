@@ -13,11 +13,11 @@ import sys
 sys.path.append('/home/esteban/Documents/Proyectos/accidentes-aereos/back-end')
 sys.path.append('/home/esteban/Documents/Proyectos/accidentes-aereos/back-end/PABEDJANGO')
 
-# python_home = '/home/ubuntu/despliegue/venv'
+python_home = '/home/ubuntu/despliegue/venv'
 
-# activate_this = python_home + '/bin/activate_this.py'
+activate_this = python_home + '/bin/activate_this.py'
 
-# exec(activate_this.read(), dict(__file__=activate_this))
+exec(activate_this, dict(__file__=activate_this))
 
 
 from django.core.wsgi import get_wsgi_application
