@@ -4,7 +4,7 @@
 
 cd /home/ubuntu/despliegue
 source home/ubuntu/miniconda3/etc/profile.d/conda.sh
-/home/ubuntu/miniconda3/bin/conda create --name --force djangopa python=3.6
+/home/ubuntu/miniconda3/bin/conda create --force --name djangopa python=3.6
 /home/ubuntu/miniconda3/bin/conda activate djangopa
 pip install -r requirements.txt
 sudo a2ensite accidentesaereros-backend.conf
