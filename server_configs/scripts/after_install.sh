@@ -3,8 +3,9 @@
 # Install libaries
 
 cd /home/ubuntu/despliegue
-/home/ubuntu/miniconda3/bin/conda create --name djangopa python=3.6
-/home/ubuntu/miniconda3/bin/conda activate djangopa
+source ~/miniconda3/etc/profile.d/conda.sh
+conda create --name --force djangopa python=3.6
+conda activate djangopa
 pip install -r requirements.txt
 sudo a2ensite accidentesaereros-backend.conf
 sudo /etc/init.d/apache2 restart
