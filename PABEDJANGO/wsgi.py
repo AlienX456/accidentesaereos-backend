@@ -10,6 +10,8 @@ https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/
 import os
 import sys
 
+print('||||||||'+sys.version_info+'||||||||')
+
 sys.path.append('/home/esteban/Documents/Proyectos/accidentes-aereos/back-end')
 sys.path.append('/home/esteban/Documents/Proyectos/accidentes-aereos/back-end/PABEDJANGO')
 
@@ -19,6 +21,7 @@ activate_this = python_home + '/bin/activate_this.py'
 
 exec(compile(open(activate_this,"rb").read(), activate_this, 'exec'), dict(__file__=activate_this))
 
+print('||||||||'+sys.version_info+'||||||||')
 
 from django.core.wsgi import get_wsgi_application
 
