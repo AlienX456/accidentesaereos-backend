@@ -4,7 +4,7 @@ cd /home/ubuntu/despliegue
 pwd
 echo "-------------------------------------------------------------------"
 echo "-------------------------------------------------------------------"
-/home/ubuntu/.local/bin/virtualenv -p python3.6 venv
+/home/ubuntu/.local/bin/virtualenv -p python3.8 venv
 source venv/bin/activate
 pip install -r requirements.txt
 #python manage.py collectstatic --no-input
