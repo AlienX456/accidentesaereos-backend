@@ -7,7 +7,7 @@ pwd
 echo "-------------------------------------------------------------------"
 echo "-------------------------------------------------------------------"
 which virtualenv
-virtualenv -p python3 venv
+/home/ubuntu/.local/bin/virtualenv -p python3 venv
 source venv/bin/activate
 pip install -r requirements.txt
 # python manage.py collectstatic --no-input
