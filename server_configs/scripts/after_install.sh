@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # Install libaries
-cd /home/ubuntu
+
+cd /home/ubuntu/despliegue
 virtualenv -p python3 venv
 source venv/bin/activate
 pip install -r requirements.txt
