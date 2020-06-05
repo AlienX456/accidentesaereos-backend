@@ -13,6 +13,12 @@ import sys
 sys.path.append('/home/esteban/Documents/Proyectos/accidentes-aereos/back-end')
 sys.path.append('/home/esteban/Documents/Proyectos/accidentes-aereos/back-end/PABEDJANGO')
 
+python_home = '/home/ubuntu/despliegue/venv'
+
+activate_this = python_home + '/bin/activate_this.py'
+execfile(activate_this, dict(__file__=activate_this))
+
+
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'PABEDJANGO.settings')
