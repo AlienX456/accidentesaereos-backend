@@ -17,7 +17,7 @@ python_home = '/home/ubuntu/despliegue/venv'
 
 activate_this = python_home + '/bin/activate_this.py'
 
-exec(activate_this, dict(__file__=activate_this))
+exec(compile(open(activate_this "rb").read(), activate_this, 'exec'), dict(__file__=activate_this))
 
 
 from django.core.wsgi import get_wsgi_application
