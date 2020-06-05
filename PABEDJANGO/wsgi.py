@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/
 import os
 import sys
 
-print('||||||||'+str(sys.version_info)+'||||||||')
+sys.stderr.write('||||||||'+str(sys.version_info)+'||||||||')
 
 sys.path.append('/home/esteban/Documents/Proyectos/accidentes-aereos/back-end')
 sys.path.append('/home/esteban/Documents/Proyectos/accidentes-aereos/back-end/PABEDJANGO')
