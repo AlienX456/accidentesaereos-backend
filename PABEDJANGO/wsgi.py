@@ -16,7 +16,9 @@ sys.path.append('/home/esteban/Documents/Proyectos/accidentes-aereos/back-end/PA
 python_home = '/home/ubuntu/despliegue/venv'
 
 activate_this = python_home + '/bin/activate_this.py'
-execfile(activate_this, dict(__file__=activate_this))
+
+with open(activate_this) as file_:
+    exec(file_.read(), dict(__file__=activate_this))
 
 
 from django.core.wsgi import get_wsgi_application
