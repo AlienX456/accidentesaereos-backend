@@ -1,8 +1,5 @@
 version: 0.0
 os: linux
-files:
-  - source: /server_configs
-    destination: /home/ubuntu/despliegue
 hooks:
   BeforeInstall:
       - location: server_configs/scripts/before_install.sh
