@@ -13,4 +13,6 @@ phases:
     commands:
       - echo "Uploading Image"
       - docker push $DOCKER_USER/accidentesaereos-backend:latest
-
+artifacts:
+  files:
+    - '**/*'
