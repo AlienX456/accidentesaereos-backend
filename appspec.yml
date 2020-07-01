@@ -1,11 +1,5 @@
 version: 0.0
 os: linux
-files:
-  - source: /
-    destination: /home/ubuntu/despliegue
-  - source: server_configs/apache/accidentesaereros-backend.conf
-    destination: /etc/apache2/sites-available
-    runas: ubuntu
 hooks:
   BeforeInstall:
       - location: server_configs/scripts/before_install.sh

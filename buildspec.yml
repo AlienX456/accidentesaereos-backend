@@ -3,18 +3,14 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo "Instalando Python 3"
-      - apt install python3
-      - echo "Instalando Dependencias"
-      - pip install -r requirements.txt
+      - echo "Logging in Docker"
+      - docker login -u=$DOCKER_USER -p=$DOCKER_TOKEN
   build:
     commands:
-      - echo "Corriendo Test"
-      - python manage.py test
+      - echo "Building Image"
+      - sudo docker build . -t $DOCKER_USER/accidentesaereos-backend:latest
   post_build:
     commands:
-      - echo Build completed on `date`
-artifacts:
-  files:
-    - '**/*'
+      - echo "Uploading Image"
+      - docker push $DOCKER_USER/accidentesaereos-backend:latest
 
